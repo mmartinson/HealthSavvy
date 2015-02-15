@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
+  resources :healthy_things
+
   resources :entries
 
 
   get 'welcome/index'
-  root 'welcome#index'
+  root 'entries#new'
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

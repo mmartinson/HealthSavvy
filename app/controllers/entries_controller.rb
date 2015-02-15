@@ -1,6 +1,6 @@
 class EntriesController < ApplicationController
-  before_action :authenticate_user!
-  
+  before_action :auth_or_redirect!
+
   def index
     
   end
@@ -27,5 +27,11 @@ class EntriesController < ApplicationController
 
   def destroy
     
+  end
+
+  private
+
+  def auth_or_redirect
+    redirect_to welcome_path unless authenticate_user!
   end
 end
