@@ -1,0 +1,88 @@
+$brand-primary: #00844d;
+
+body {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+@mixin center-align {
+  text-align: center;
+  vertical-align: center;
+}
+
+.header {
+  color: white;
+  background-color: black;
+  padding: 20px;
+}
+
+.main-contain {
+  background-color: $brand-primary;
+  padding: 40px;
+  display: flex;
+}
+
+.main-info { 
+  order: 1;
+  flex-grow: 45;
+}
+
+.main-form {
+  order: 2;
+  flex-grow: 65;
+}
+
+.thing-description {
+  @include center-align;
+  display: inline-block;
+}
+
+.thing-input {
+  @include center-align;
+  display: inline-block; 
+}
+
+.value-button {
+  @include center-align;
+  height: 40px;
+  width: 40px;
+  margin: auto;
+  background: $brand-primary;
+  font-size: xx-large;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 100%;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+}
+
+  
+  
+  
+
+.value-field { 
+  @include center-align;
+  height: 40px;
+  width: 40px;
+  font-size: xx-large;
+  display: inline-block;
+  border: 2px solid #5C5C5C;
+}
+
+.submit-button {
+  border-radius: 20px;
+  background-color: grey;
+  display: inline-block;
+  padding: 10px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+

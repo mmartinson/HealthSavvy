@@ -5,6 +5,7 @@ class CreateHealthyThings < ActiveRecord::Migration
       t.integer :value
       t.integer :daily_limit
       t.references :challenge
+      t.integer :daily_limit
 
       t.timestamps null: false
     end

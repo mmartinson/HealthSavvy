@@ -1,12 +1,12 @@
 class EntriesController < ApplicationController
-  before_action :auth_or_redirect!
+  before_action :authenticate_user!
 
   def index
     
   end
 
   def new
-    
+    @healthy_things = HealthyThing.all
   end
 
   def create
@@ -31,7 +31,4 @@ class EntriesController < ApplicationController
 
   private
 
-  def auth_or_redirect
-    redirect_to welcome_path unless authenticate_user!
-  end
 end

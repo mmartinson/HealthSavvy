@@ -11,7 +11,6 @@ gem 'jquery-rails'
 gem 'rack-cors', :require => 'rack/cors'
 gem 'quiet_assets'
 gem 'active_model_serializers'
-gem 'devise'
 gem 'omniauth-twitter'
 gem 'unicorn'
 gem 'bootstrap-sass'
@@ -24,6 +23,7 @@ group :development do
   gem 'interactive_editor'
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'annotate', '~> 2.6.5'
 end
 
 group :development, :test do

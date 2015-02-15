@@ -55,6 +55,8 @@ ActiveRecord::Schema.define(version: 20150215031113) do
     t.string   "name"
     t.string   "profile_image_url"
     t.boolean  "admin",             default: false
+    t.string   "provider"
+    t.string   "uid"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
