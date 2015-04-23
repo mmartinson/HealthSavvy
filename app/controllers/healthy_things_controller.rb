@@ -1,0 +1,2 @@
+class HealthyThingsController < ApplicationController
+end

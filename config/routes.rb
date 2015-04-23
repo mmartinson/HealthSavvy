@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
+
+  resources :healthy_things
   resources :entries
+  get '/welcome', to: 'welcome#index'
+  match '/auth/twitter/callback', to: 'sessions#create', via: [:get, :post]
+  root to: 'entries#new'
 
 
-  get 'welcome/index'
-  root 'welcome#index'
-  devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -1,0 +1,28 @@
+<div class="header">
+  <h1>Welcome to HealthSavvy</h1>
+  <h3>Get Flossing!</h3>  
+</div>
+<div class="main-contain">
+  <div class="main-info"></div>
+  <div class="main-form">
+  
+  
+    <form id="entry-form">
+    
+      <% @healthy_things.each do |thing| %>
+        <div class="entry-box well">
+          <div class="thing-description">
+            <h5 class='thing-title'><%= thing.name %></h5>
+          </div>
+          <div class="thing-input">
+            <div class="value-button minus-button">-</div>
+            <div class="value-field">0</div>
+            <div class="value-button plus-button">+</div>
+          </div>
+          <div class="submit-button">Submit</div>
+        </div>
+      <% end %>
+    </form>
+  </div>
+</div>
+

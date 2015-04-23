@@ -1,0 +1,2 @@
+module HealthyThingsHelper
+end

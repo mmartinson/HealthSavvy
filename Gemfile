@@ -6,15 +6,15 @@ gem 'rails', '4.2.0'
 gem 'pg'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.1.0'
+# gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'rack-cors', :require => 'rack/cors'
 gem 'quiet_assets'
 gem 'active_model_serializers'
-gem 'devise'
 gem 'omniauth-twitter'
 gem 'unicorn'
 gem 'bootstrap-sass'
+gem 'react-rails', '~> 1.0.0.pre', github: 'reactjs/react-rails'
 
 group :development do
   gem 'hirb'
@@ -24,6 +24,7 @@ group :development do
   gem 'interactive_editor'
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'annotate', '~> 2.6.5'
 end
 
 group :development, :test do
